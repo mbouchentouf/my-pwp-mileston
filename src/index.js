@@ -2,13 +2,12 @@ const express = require("express")
 const morgan = require("morgan")
 const bodyParser = require("body-parser")
 const Recaptcha = require("express-recaptcha").RecaptchaV2
-require('dotenv').config()
 const mailgun = require("mailgun-js")
 const {check, validationResult} = require("express-validator")
 
+// please work this time //
 
 
-const mailgun = Mailgun({apiKey: process.env.MAILGUN_API_KEY, domain:process.env.MAILGUN_DOMAIN})
 const validation = [
     check("name", "A valid name is required.").not().isEmpty().trim().escape(),
     check("email", "Please provide a valid email").isEmail(),
@@ -17,10 +16,9 @@ const validation = [
 
 
 ]
-
+const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY, domain:process.env.MAILGUN_DOMAIN})
 const app = express()
 const recaptcha = new Recaptcha(process.env.RECAPTCHA_SITE_KEY, process.env.RECAPTCHA_SECRET_KEY)
-const mg = mailgun({apiKey:process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN})
 
 
 
@@ -63,6 +61,7 @@ const handlePostRequest = (request, response, nextFunction) => {
 
     mg.messages().send(mailgunData, (error) => {
         if (error) {
+            console.log(error)
             return response.send(Buffer.from(`<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong> Unable to send email error with email sender</div>`))
         }
         return response.send(Buffer.from("<div class='alert alert-success' role='alert'>Email successfully sent.</div>"))

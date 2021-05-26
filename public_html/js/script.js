@@ -22,7 +22,7 @@ $(document).ready(function () {
         },
         messages: {
             name: {
-                required: "Name is a required field"
+                required: "Name is a required field",
             },
             email: {
                 email: "Please provide a valid email",
@@ -33,14 +33,15 @@ $(document).ready(function () {
             }
         },
         submitHandler: (form) => {
+
             $("#contact").ajaxSubmit({
                 type: "POST",
                 url: $("#contact").attr('action'),
                 success: (ajaxOutput) => {
-                    $("output-area").css("display","")
-                    $("output-area").html(ajaxOutput)
+                    $("#output-area").css("display","")
+                    $("#output-area").html(ajaxOutput)
 
-                    if($(".alert-success" >= 1)) {
+                    if($(".alert-success") >= 1) {
                         $("#contact")[0].reset()
                     }
 
