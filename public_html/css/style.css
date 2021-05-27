@@ -1,0 +1,15 @@
+body {
+    position: relative;
+}
+
+#my-story {
+    padding-top: 60px;
+    height: 400px;
+}
+
+#my-work {
+    padding-top: 60px;
+}
+#contact-me {
+    padding-top: 60px;
+}

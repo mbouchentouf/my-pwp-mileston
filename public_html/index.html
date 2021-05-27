@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <title>Milestone</title>
+    <title>Massimo Bouchentouf</title>
 </head>
 <body data-spy="scroll" data-target=".navbar">
-<nav class="navbar navbar-expand-lg navbar-light bg-light border border-secondary rounded p-0  fixed-top">
+<nav class="navbar navbar-expand-lg text-white navbar-dark bg-primary border border-secondary rounded-bottom p-0  fixed-top">
     <div class="container px-0 px-md-0">
-        <a class="navbar-brand" href="index.html"><b>Home</b></a>
+        <a class="navbar-brand" href="index.html"><b>Home</b>
+        <img src="documentation/am.png" alt="brand logo" height="50" width="50"
+             class="rounded-circle d-inline-block">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAltMarkup"
                 aria-controls="navbarAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -18,9 +22,9 @@
 
         <div class="collapse navbar-collapse" id="navbarAltMarkup">
             <div class="navbar-nav ml-auto">
-                <a class="nav-link" href="#"><b>My Story</b></a>
-                <a class="nav-link" href="#"><b>My Work</b></a>
-                <a class="nav-link" href="#"><b>Contact Me</b></a>
+                <a class="nav-link" href="#my-story"><b>My Story</b></a>
+                <a class="nav-link" href="#my-work"><b>My Work</b></a>
+                <a class="nav-link" href="#contact-me"><b>Contact Me</b></a>
             </div>
         </div>
     </div>
@@ -33,7 +37,8 @@
                 <h1>Azul Flawen!</h1>
                 <p> This means "Hello!" in my native language. I'm Massimo Bouchentouf,
                     originally from Morocco and I love to build things on the web. As a Fullstack Developer
-                    I enjoy problem solving on the server and client side.</p>
+                    I enjoy problem solving on the server and client side.Creative and always looking to gain and learn
+                    more everyday.</p>
             </div>
             <div class="text-center col-md-6 offset-md-6">
                 <h2>Massimo Bouchentouf </h2>
@@ -44,39 +49,39 @@
 </section>
 
 <section class="my-md-5 bg-secondary">
-    <div id="MyStory" class="container">
+    <div id="my-story" class="container">
         <div class="row">
             <div class="col">
                 <h2>My Story</h2>
-                <p>I initially started my Web development training 10 years ago, but I had the fortunate luck
+                <p>    I initially started my Web development training 10 years ago, but I had the fortunate luck
                     being granted the Visa to come to the US. So after gaining work experience in different fields
                     I decided to return to my initial interest. I worked as a construction worker, then I got a job at manufacturing company as a
                     warehouse worker. During that period I obtained my forklift operation certificate, which led me to be
                     the warehouse supervisor and the operator of the steel machine that manufactures bundles of steel we used
                     to ship to South America so the rest of the crew put these pieces together to build Anti-Disaster houses
                     for low income families. After that I decided to join the restaurant field, I worked as a busboy, then
-                    a cook, and I ended up as kitchen supervisor in Sunport Airport when
-                    I moved to Albuquerque in 2017. After that I applied to Baillos and I worked there as a delivery driver
-                    and as an appliances installer; fridges, dishwashers, dryers, Tvs ...</p>
+                    a cook, and I ended up as kitchen supervisor... This previous experience taught me to be organized, a team player and a fast learner, as well as
+                   giving the best quality in a timely manner.</p>
             </div>
         </div>
     </div>
 </section>
 
-<div id="MyWork" class="container py-3 bg-light">
+<div id="my-work">
+<div class="container py-3 bg-light">
     <div class="row">
         <div class="col">
             <h2>My Work</h2>
     </div>
     <div class="row justify-content-between">
         <div class="col-md-3 card border-0">
-            <img src="documentation/html.png" class="rounded-circle card-img-top img-fluid" alt="html" height="300" width="300">
+            <img src="documentation/html.png" class="rounded-circle card-img-top img-fluid" alt="html" height="150" width="150">
             <div class="card-body text-center">
                 <h5 class="card-title">HTML5</h5>
             </div>
         </div>
         <div class="col-md-3 card border-0">
-            <img src="documentation/css.png" class="rounded-circle card-img-top img-fluid" alt="css" height="300" width="300">
+            <img src="documentation/css.png" class="rounded-circle card-img-top img-fluid" alt="css"  height="150" width="150">
             <div class="card-body text-center">
                 <h5 class="card-title">CSS</h5>
             </div>
@@ -88,7 +93,7 @@
             </div>
         </div>
         <div class="col-md-3 card border-0">
-            <img src="documentation/jsnode2.png" class="rounded-circle card-img-top img-fluid" alt="js node" height="300" width="300">
+            <img src="documentation/jsnode2.png" class="rounded-circle card-img-top img-fluid" alt="js node" height="30" width="30">
             <div class="card-body text-center">
                 <h5 class="card-title">Node JS</h5>
             </div>
@@ -118,10 +123,12 @@
             </div>
         </div>
     </div>
+        <p><b>These are the technologies I learned when I took Deep Dive Coding Bootcamp as a Fullstack Web Developer.
+              I'm very glad I took this opportunity and I didn't let slip through my fingers.</b></p>
     </div>
 </div>
-
-<div class="bg-secondary">
+</div>
+<div class="bg-secondary" id="contact-me">
     <main class="container">
         <div class="row">
             <div class="contact col-md-6">
@@ -182,6 +189,11 @@
         </div><!-- /.row -->
     </main>
 </div>
+<footer class="bg bg-dark text-light text-center mt-6 ">
+    <small>
+        <img src="documentation/GitHub-Mark-32px.png" alt="githun logo">
+    </small>
+</footer>
 
 
 
