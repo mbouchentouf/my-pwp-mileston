@@ -2,14 +2,14 @@ body {
     position: relative;
 }
 
-#my-story {
+#About {
     padding-top: 60px;
-    height: 400px;
 }
 
 #my-work {
-    padding-top: 60px;
+    padding-top: 6px;
 }
+
 #contact-me {
     padding-top: 60px;
 }
